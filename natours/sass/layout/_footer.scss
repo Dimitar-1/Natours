@@ -1,0 +1,42 @@
+.footer {
+  background-color: #cedfb6;
+  color: #000;
+  font-size: 2rem;
+  padding: 10rem 0;
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__logo {
+    height: 17rem;
+    width: auto;
+  }
+
+  &__list {
+    display: flex;
+    gap: 1.4rem;
+    list-style-type: none;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: inherit;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+      color: $primary-color;
+      box-shadow: rgba($color-black, 0.4);
+      transform: rotate(5deg) scale(1.1);
+    }
+  }
+}

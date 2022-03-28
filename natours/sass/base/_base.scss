@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: $color-gray-dark;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $primary-color-dark;
+  border-radius: 20px;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: $color-white;
+  background-color: $primary-color;
+}
+
+::selection {
+  color: $color-white;
+  background-color: $primary-color;
+}

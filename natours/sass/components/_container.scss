@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+
+  &--small-padding {
+    padding: 3.2rem 0;
+  }
+
+  &--medium-padding {
+    padding: 5.4rem 0;
+  }
+
+  &--big-padding {
+    padding: 8rem 0;
+  }
+
+  &--big {
+    max-width: 120rem;
+  }
+
+  &--medium {
+    max-width: 114rem;
+  }
+
+  &--small {
+    max-width: 96rem;
+  }
+}

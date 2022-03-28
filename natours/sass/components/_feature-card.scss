@@ -1,0 +1,44 @@
+.feature-card {
+  background-color: darkslategrey;
+  color: $color-white;
+  border-radius: 9px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all 0.4s ease-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  & .heading-tertiary {
+    display: block;
+    text-align: center;
+    font-family: serif;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    border-bottom: 2px solid $color-white;
+    padding-bottom: 2px;
+    margin-bottom: 2rem;
+  }
+
+  &-img-box {
+    overflow: hidden;
+  }
+
+  &-img-box img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+    transform: scale(1.1);
+  }
+
+  &-img-box img:hover {
+    transform: scale(1);
+  }
+
+  &-text-box {
+    padding: 3rem;
+  }
+}
